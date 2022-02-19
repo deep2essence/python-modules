@@ -1,2 +1,2 @@
 # python-modules
-frequently used python utilites
+A collection of handy python utilites
