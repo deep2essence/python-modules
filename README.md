@@ -9,3 +9,4 @@ file2byte||
 byte2file||
 runscript|'cd ~; mkdir test; touch hello.tx; cd -'|
 string2datetime||
+go2md|func main() {<br>&nbsp;&nbsp;&nbsp;var i interface{} = "hello"<br>&nbsp;&nbsp;&nbsp;s := i.(string)<br>&nbsp;&nbsp;&nbsp;fmt.Println(s)<br>&nbsp;&nbsp;&nbsp;s, ok := i.(string)<br>&nbsp;&nbsp;&nbsp;fmt.Println(s, ok)<br>&nbsp;&nbsp;&nbsp;f, ok := i.(float64)<br>&nbsp;&nbsp;&nbsp;fmt.Println(f)<br>}<br>|func main() {<\br>&\nbsp;&\nbsp;&\nbsp;var i interface{} = "hello"<\br>&\nbsp;&\nbsp;&\nbsp;s := i.(string)<\br>&\nbsp;&\nbsp;&\nbsp;fmt.Println(s)<\br>&\nbsp;&\nbsp;&\nbsp;s, ok := i.(string)<\br>&\nbsp;&\nbsp;&\nbsp;fmt.Println(s, ok)<\br>&\nbsp;&\nbsp;&\nbsp;f, ok := i.(float64)<\br>&\nbsp;&\nbsp;&\nbsp;fmt.Println(f)<\br>}<\br>

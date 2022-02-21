@@ -8,9 +8,15 @@ def go2md(filepath):
   with open(filepath,'r') as f:
     for line in f.readlines():
       lines.append(line.replace("\t","&nbsp;&nbsp;&nbsp;").replace("\n","<br>"))
-  return "".join(lines)
+  output="".join(lines)
+  print(output)
+  ## prove
+  with open("output.md",'w') as f:
+    f.write("function|example\n")
+    f.write("--------|-----\n")
+    f.write("sample |"+output+"\n")
 
 if __name__=="__main__":
   import sys
-  if len(sys.argv) < 3: print("Format: python go2md.py xxx.go")
-  go2mod(sys.argv[2])
+  if len(sys.argv) < 2: print("Format: python go2md.py filepath")
+  else: go2md(sys.argv[1])
