@@ -1,5 +1,5 @@
 Python is the best programming language to develop simple utilities thanks to its simpleness.
-# python-modules
+# pyutils
 A collection of handy python utilites
 ### Functions
 Func.|Input|Output
